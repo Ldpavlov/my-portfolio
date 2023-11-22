@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Short Story</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif;
+        }
+
+        body,
+        html {
+            height: 100%;
+            color: #777;
+            line-height: 1.8;
+        }
+
+        /* Create a Parallax Effect */
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+            background-image: url('image/pic10.jpg');
+            min-height: 100%;
+        }
+
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+            background-image: url("image/pic2.jpg");
+            min-height: 400px;
+        }
+
+        /* Third image (Contact) */
+        .bgimg-3 {
+            background-image: url("image/pic1.jpg");
+            min-height: 400px;
+        }
+
+        .w3-wide {
+            letter-spacing: 10px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1600px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALERY</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERY</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p>I'm Simeon Pavlov, a passionate freeride skier from Bansko, Bulgaria. At the tender age of 4, I strapped on
+            my first pair of skis, thanks to my ski-loving parents. Little did I know that those early glides down the
+            slopes would ignite a lifelong love affair with freeride skiing.
+
+            My journey into freeride skiing officially began at 15 when I entered my first competition. I've been
+            carving my way through the snow ever since, taking part in an average of three to four competitions a
+            season. The thrill of competition became a familiar companion. It culminated in my triumphant victory in the
+            junior category at the age of 17. I've made a name for myself in the freeride community.
+
+            Beyond the snow-covered peaks, my off-seasons are a mosaic of outdoor adventures. Surfing, climbing, hiking,
+            tennis – you name it, I've probably tried it. An advocate for an active lifestyle, I find joy in perpetual
+            motion and maintain my fitness through a variety of sports. Notably, I proudly held the title of Bulgarian
+            national champion in both freeride skiing and Enduro Mountain Biking. I even ventured into the World Enduro
+            Series, where I faced one of the most challenging competitions of my career, finishing 24th.
+
+            The silver screen also captured a slice of my skiing prowess. I co-starred in the ski movie "Зима," filmed
+            right here in Bulgaria. Our efforts were rewarded with the distinction of the best Bulgarian outdoor movie,
+            a testament to the raw beauty of our mountainous landscapes.
+        </p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>Simeon Pavlov</b></p><br>
+                <img src="image/pic6.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="500" height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>Currently, my sights are set on an ambitious goal – to become the first Bulgarian ever to qualify for
+                    the
+                    prestigious Freeride World Tour. I've already made significant strides, clinching victory in the 3
+                    out of 4
+                    stars competition in Bansko in 2023. The win not only added points to my tally but also brought me
+                    one step
+                    closer to realizing my dream.
+
+                    In essence, skiing isn't just a sport for me – it's a passion, a way of life. Whether racing down
+                    the
+                    slopes, conquering peaks, or pushing my limits, every moment spent in the mountains is a celebration
+                    of the
+                    very essence of who I am. Join me on this exhilarating journey through snow-covered landscapes and
+                    beyond –
+                    the adventure never stops!</p>
+            </div>
+        </div>
+        <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div> -->
+    </div>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">15+</span><br>
+            Podiums
+        </div>
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">42+</span><br>
+            Competitions done
+        </div>
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">4</span><br>
+            Partners
+        </div>
+        <!-- <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">150+</span><br>
+            Meetings
+        </div> -->
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">Latest Skiing Adventures</h3>
+        <p class="w3-center"><em>Explore the thrill and beauty of my recent skiing escapades through these captivating
+                snapshots. Whether gracefully navigating pristine powder or conquering challenging slopes, each image
+                tells a story of passion, perseverance, and the sheer joy of freeride skiing. Take a visual journey with
+                me through the world of snow-covered peaks and adrenaline-pumping descents.<br> Click on the image to
+                make
+                them bigger</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="image/pic4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Laying down">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="image/pic5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="My first victory in ski men category in Bansko 2023">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="image/pic7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="On the way to mt. Todorka">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="image/pic10.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Backflip of a cliff...one of my favorites photos">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="image/pic8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Sluff...">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="image/pic9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Simple turn...">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="image/pod.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="My first junior title in Andorra 2017">
+            </div>
+            <div class="w3-col m3">
+                <img src="image/pic1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Demianitsa valley in Pirin mountainous">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size image on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+        <div class="w3-center">
+            <!-- <div class="w3-col m4 w3-container">
+                <img src="/w3image/map.jpg" class="w3-image w3-round" style="width:100%">
+            </div> -->
+            <div class="w3-center">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Sofia, BG<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    simeonpavlov07@gmail.com<br>
+                </div>
+                <!-- <p>Leave me a note:</p>
+                <form id="contactForm">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <textarea class="w3-input w3-border" placeholder="Message" required name="Message"></textarea>
+                    <button class="w3-button w3-black w3-right w3-section" type="submit" onclick="submitForm()">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/simeon.pavlov.75" class="fa fa-facebook-official w3-hover-opacity"></a>
+            <a href="https://www.instagram.com/ldpavlov/" class="fa fa-instagram w3-hover-opacity"></a>
+            <a href="https://www.freerideworldtour.com/qualifier/riders/simeon-pavlov/?season=2023" class="fa fa-bars w3-hover-opacity"></a>
+        </div>
+        <p>Powered by <a href="https://freerideteambg.com" title="freerideteambg.com" target="_blank"
+                class="w3-hover-text-green"><em>freerideteambg.com</em></a></p>
+    </footer>
+
+    <!-- <script src="main.js"></script> -->
+
+</body>
+
+</html>
