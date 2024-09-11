@@ -25,6 +25,9 @@
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALERY</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <!-- Language Switch Button -->
+            <a href="javascript:void(0);" class="w3-bar-item w3-button" onclick="switchLanguage()">BG / EN</a>
+
         </div>
 
         <!-- Navbar on small screens -->
@@ -43,24 +46,7 @@
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="w3-center">ABOUT ME</h3>
-        <p>I'm Simeon Pavlov, a passionate freeride skier from Bansko, Bulgaria. At the tender age of 4, I strapped on
-            my first pair of skis, thanks to my ski-loving parents. Little did I know that those early glides down the
-            slopes would ignite a lifelong love affair with freeride skiing.
-
-            My journey into freeride skiing officially began at 15 when I entered my first competition. I've been
-            carving my way through the snow ever since, taking part in an average of three to four competitions a
-            season. The thrill of competition became a familiar companion. It culminated in my triumphant victory in the
-            junior category at the age of 17. I've made a name for myself in the freeride community.
-
-            Beyond the snow-covered peaks, my off-seasons are a mosaic of outdoor adventures. Surfing, climbing, hiking,
-            tennis – you name it, I've probably tried it. An advocate for an active lifestyle, I find joy in perpetual
-            motion and maintain my fitness through a variety of sports. Notably, I proudly held the title of Bulgarian
-            national champion in both freeride skiing and Enduro Mountain Biking. I even ventured into the World Enduro
-            Series, where I faced one of the most challenging competitions of my career, finishing 24th.
-
-            The silver screen also captured a slice of my skiing prowess. I co-starred in the ski movie "Зима," filmed
-            right here in Bulgaria. Our efforts were rewarded with the distinction of the best Bulgarian outdoor movie,
-            a testament to the raw beauty of our mountainous landscapes.
+        <p id="aboutText">
         </p>
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
@@ -71,21 +57,7 @@
 
             <!-- Hide this text on small devices -->
             <div class="w3-col m6 w3-hide-small w3-padding-large">
-                <p>Currently, my sights are set on an ambitious goal – to become the first Bulgarian ever to qualify for
-                    the
-                    prestigious Freeride World Tour. I've already made significant strides, clinching victory in the 3
-                    out of 4
-                    stars competition in Bansko in 2023. The win not only added points to my tally but also brought me
-                    one step
-                    closer to realizing my dream.
-
-                    In essence, skiing isn't just a sport for me – it's a passion, a way of life. Whether racing down
-                    the
-                    slopes, conquering peaks, or pushing my limits, every moment spent in the mountains is a celebration
-                    of the
-                    very essence of who I am. Join me on this exhilarating journey through snow-covered landscapes and
-                    beyond –
-                    the adventure never stops!</p>
+                <p id="aboutText2"></p>
             </div>
         </div>
     </div>
@@ -108,7 +80,7 @@
                 </span>
                 <span class="w3-xlarge">
                     <img src="image/surefoot.png" class="w3-hover-opacity" alt="Surefoot"
-                        style="width:80px; height:auto;">
+                        style="width:50px; height:auto;">
                 </span>
                 <span class="w3-xlarge">
                     <img src="image/freerideteambg.svg" class="w3-hover-opacity" alt="FreerideTeamBG"
@@ -126,15 +98,7 @@
 
     <div class="w3-content w3-container w3-padding-56" id="portfolio" style="margin-top: 30px; font-size:medium">
         <h3 class="w3-center">Future plans</h3>
-        <p class="w3-center">Throughout the upcoming season, I'll be traveling across the Alps to compete in the
-            Freeride World Tour Challengers. This competition is the crucial next step toward my goal of qualifying
-            for the Freeride World Tour, the pinnacle of freeride skiing. To earn a spot in the Challengers, I had
-            to place in the top 25 of the Freeride World Qualifiers, securing my position for the next year. With
-            only 25 men competing in the Challengers, no Bulgarian has achieved this yet.
-            In between competitions, I also plan to film and showcase the beauty of Bulgaria's untouched mountains,
-            highlighting our incredible terrain.<br>
-            I need your support to help me reach my dream of becoming the first Bulgarian to qualify for the
-            Freeride World Tour!
+        <p class="w3-center" id="futurePlans">
         </p><br>
     </div>
 
@@ -142,12 +106,11 @@
 
     <div class="w3-content w3-container w3-padding-56" id="portfolio">
         <h3 class="w3-center">Latest Skiing Adventures</h3>
-        <p class="w3-center"><em>Explore the thrill and beauty of my recent skiing escapades through these captivating
-                snapshots. Whether gracefully navigating pristine powder or conquering challenging slopes, each image
-                tells a story of passion, perseverance, and the sheer joy of freeride skiing. Take a visual journey with
-                me through the world of snow-covered peaks and adrenaline-pumping descents.<br> Click on the image to
-                make
-                them bigger</em></p><br>
+        <p class="w3-center" id="latest"><em>
+                <br>
+            </em><br>
+        <p class="w3-center" id="clickPicture"></p>
+        </p>
 
         <div class="w3-row-padding w3-center">
             <div class="w3-col m3">
@@ -173,13 +136,10 @@
 
         <div class="w3-row-padding w3-center w3-section">
             <div class="w3-col m3">
-                <img src="image/pic8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="">
+                <img src="image/pic8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
             </div>
-
             <div class="w3-col m3">
-                <img src="image/pic9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="">
+                <img src="image/pic9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
             </div>
 
             <div class="w3-col m3">
